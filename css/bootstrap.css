@@ -1,0 +1,309 @@
+:root {
+  --backgraound-color: #365e32;
+  --color-one: #81a263;
+  --color-two: #e7d37f;
+  --hover-color: #fd9b63;
+  --color-white: rgb(252, 252, 252);
+  --color-green: #66ff00;
+  --transparant-color: #8fb46d71;
+  --transparant-color-two: #97b37c3f;
+  --yello-color: rgb(255, 230, 0);
+}
+.navbar {
+  background-color: var(--backgraound-color);
+  position: fixed;
+}
+.navbar .navbar-brand {
+  color: var(--color-two);
+  font-family: "FontAwesome";
+  transition: 0.5s;
+}
+.navbar .navbar-brand:hover {
+  color: var(--hover-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: var(--color-two);
+  transition: 0.5s;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--hover-color);
+}
+.search {
+  border-left: 2px solid var(--color-two);
+  margin-right: 5px;
+}
+.fa-magnifying-glass {
+  color: var(--color-two);
+  transition: 0.5s;
+}
+.fa-magnifying-glass:hover {
+  color: var(--hover-color);
+}
+.btn-nav {
+  padding: 5px 40px;
+  border-radius: 20px;
+  background-color: var(--color-one);
+  color: var(--color-two);
+  border: 2px solid var(--color-two);
+  text-decoration: none;
+  z-index: 100;
+  transition: 0.5s;
+}
+.btn-nav:hover {
+  background-color: var(--hover-color);
+  color: var(--color-two);
+  border: 2px solid var(--color-two);
+}
+.navbar .navbar-toggler {
+  color: var(--color-two);
+  border-color: var(--color-two);
+  transition: 1s;
+}
+.navbar .navbar-toggler:hover {
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--color-green);
+  color: var(--color-green);
+}
+.navbar .navbar-toggler-icon {
+  width: 17px;
+  height: 22px;
+}
+.landing {
+  background-color: var(--backgraound-color);
+  height: calc(100vh - 65.39px);
+}
+.fa-laptop {
+  color: var(--color-two);
+}
+
+.clasS-Mo {
+  font-size: 12rem;
+  opacity: 0.5;
+}
+.icoN-Mo {
+  font-size: 4rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 45%;
+  color: var(--backgraound-color);
+}
+.feat::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  position: absolute;
+  background-color: var(--backgraound-color);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+}
+.link-a {
+  text-decoration: none;
+  color: var(--color-one);
+  padding-left: 20px;
+  transition: 1s;
+}
+.active-a {
+  padding: 5px 15px;
+  background-color: var(--backgraound-color);
+  border-radius: 10px;
+}
+.link-a:focus,
+.link-a:hover {
+  color: var(--hover-color);
+}
+.img-sec-card {
+  border-radius: 10px;
+}
+.img-row {
+  overflow: hidden;
+}
+.img-row::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: var(--transparant-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  font-size: 1.5rem;
+  transform: translateY(-100%);
+}
+.img-row:hover::before {
+  transform: translateY(0);
+}
+.feature {
+  background-color: var(--transparant-color-two);
+}
+.section-about {
+  background-color: var(--transparant-color);
+}
+.about-sec-line::before {
+  content: " ";
+  width: 120px;
+  height: 2px;
+  background-color: var(--backgraound-color);
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+}
+.btn-about {
+  padding: 10px 60px;
+  border-radius: 20px;
+  background-color: var(--color-one);
+  color: var(--color-two);
+  border: 2px solid var(--color-two);
+  text-decoration: none;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.btn-about:hover {
+  background-color: var(--hover-color);
+  color: var(--color-two);
+  border: 2px solid var(--color-two);
+}
+.team-color {
+  color: var(--color-one);
+}
+.card-team h2 {
+  background-color: var(--color-one);
+}
+.card-team img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card-team {
+  box-shadow: 1px 1px 10px 0px black;
+  border-radius: 5px;
+}
+.mo-border {
+  border-radius: 10px;
+  width: 800px;
+}
+.mo-text-about {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mo-border-bottom::before {
+  content: " ";
+  width: 120px;
+  height: 2px;
+  background-color: var(--backgraound-color);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+}
+.sec-team {
+  background-color: var(--transparant-color-two);
+}
+.section-card {
+  background-color: var(--color-white);
+}
+.start-project {
+  background-color: var(--backgraound-color);
+  height: 250px;
+}
+.mo-fs-color-icon {
+  font-size: 100px;
+  color: var(--color-one);
+  transition: 0.5s;
+}
+.mo-fs-color-icon:hover {
+  color: var(--hover-color);
+}
+.blog {
+  background-color: var(--transparant-color-two);
+}
+.subscribe {
+  background-color: var(--yello-color);
+}
+.subscribe input {
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  color: var(--backgraound-color);
+  font-size: 20px;
+  border-bottom: 2px solid var(--backgraound-color);
+  transition: 0.5s;
+}
+.subscribe input:focus {
+  outline: none;
+}
+.subscribe h5 {
+  font-size: 20px;
+  padding: 5px;
+}
+.subscribe .mo-btn-subscribe {
+  padding: 10px 60px;
+  border-radius: 20px;
+  background-color: var(--color-one);
+  color: var(--color-two);
+  border: 2px solid var(--color-two);
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe .mo-btn-subscribe:hover {
+  background-color: var(--hover-color);
+  color: var(--color-two);
+  border: 2px solid var(--color-two);
+}
+/* footer */
+.footer{
+    background-color: var(--backgraound-color);
+}
+.Rady-footer{
+    color: var(--color-two);
+    font-family: "FontAwesome";
+    transition: 0.5s;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.Rady-footer:hover {
+    color: var(--hover-color);
+}
+.color-footer-one{
+    color: aqua;
+}
+.color-footer-two{
+    color: var(--yello-color);
+}
+.icon-footer a{
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.fa-facebook{
+    color: rgb(29, 29, 223);
+}
+.fa-linkedin{
+    color: rgb(39, 39, 255);
+}
+.fa-square-github{
+    color: black;
+}
+.fa-instagram{
+    color: rgb(255, 73, 255);
+}
+/*end footer */
